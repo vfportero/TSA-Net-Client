@@ -1,0 +1,11 @@
+﻿<SignRequest xmlns="urn:oasis:names:tc:dss:1.0:core:schema">
+  <OptionalInputs>
+	<ReturnSigningTimeInfo/>
+    <SignatureType>urn:oasis:names:tc:dss:1.0:core:schema:XMLTimeStampToken</SignatureType>
+  </OptionalInputs>
+  <InputDocuments>
+    <Document>
+      <Base64Data>{0}</Base64Data>
+    </Document>
+  </InputDocuments>
+</SignRequest>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dss:VerifyRequest xmlns:dss="urn:oasis:names:tc:dss:1.0:core:schema" Profile="urn:oasis:names:tc:dss:1.0:profiles:XAdES">
+  <dss:InputDocuments>
+    <dss:DocumentHash ID="Doc1">
+      <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" xmlns:ds="http://www.w3.org/2000/09/xmldsig#"/>
+      <ds:DigestValue xmlns:ds="http://www.w3.org/2000/09/xmldsig#">{0}</ds:DigestValue>
+    </dss:DocumentHash>
+  </dss:InputDocuments>
+  <dss:SignatureObject>{1}</dss:SignatureObject>
+</dss:VerifyRequest>
