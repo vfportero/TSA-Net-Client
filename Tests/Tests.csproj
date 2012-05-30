@@ -54,7 +54,7 @@
     <Compile Include="Integration\TimeStampServiceIntegrationTests.cs" />
     <Compile Include="Integration\TractisDssClientIntegrationTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Servives\TimeStampServiceTests.cs" />
+    <Compile Include="Services\TimeStampServiceTests.cs" />
     <Compile Include="Providers\Tractis\TractisDssClientTests.cs" />
   </ItemGroup>
   <ItemGroup>
