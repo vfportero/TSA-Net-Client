@@ -5,7 +5,7 @@ using Rhino.Mocks;
 using TSA_Net_Client.Providers;
 using TSA_Net_Client.Services;
 
-namespace Tests.Servives
+namespace Tests.Services
 {
     [TestFixture]
     public class TimeStampServiceTests : BaseTests
