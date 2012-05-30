@@ -4,7 +4,6 @@ using NUnit.Framework;
 using Rhino.Mocks;
 using TSA_Net_Client.Providers;
 using TSA_Net_Client.Services;
-using Terminis.Tests.Helpers;
 
 namespace Tests.Servives
 {

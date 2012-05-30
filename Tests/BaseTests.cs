@@ -1,7 +1,7 @@
 ﻿using Rhino.Mocks;
 using StructureMap;
 
-namespace Terminis.Tests.Helpers
+namespace Tests
 {
     public class BaseTests
     {

@@ -1,6 +1,5 @@
 ﻿using NUnit.Framework;
 using TSA_Net_Client.Providers.Tractis;
-using Terminis.Tests.Helpers;
 
 namespace Tests.Integration
 {
