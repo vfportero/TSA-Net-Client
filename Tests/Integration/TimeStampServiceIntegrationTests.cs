@@ -28,7 +28,7 @@ namespace Tests.Integration
         [Test]
         public void Service_GetTimeStamp_Returns_TimeStamp()
         {
-            var result = _timeStampService.GetTimeStamp(_content);
+            var result = _timeStampService.GenerateTimeStamp(_content);
 
             Assert.That(result, Is.Not.Null);
             Assert.That(result.IsSuccess, Is.True);

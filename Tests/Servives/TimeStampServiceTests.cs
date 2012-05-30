@@ -51,22 +51,22 @@ namespace Tests.Servives
 
         [Test]
         [ExpectedException(typeof(ArgumentNullException))]
-        public void TimeStampService_GetTimeStamp_Null_Content_Throws_Exception()
+        public void TimeStampService_GenerateTimeStamp_Null_Content_Throws_Exception()
         {
-            _timeStampService.GetTimeStamp(null);
+            _timeStampService.GenerateTimeStamp(null);
         }
 
         [Test]
         [ExpectedException(typeof(ArgumentNullException))]
-        public void TimeStampService_GetTimeStamp_Empty_Content_Throws_Exception()
+        public void TimeStampService_GenerateTimeStamp_Empty_Content_Throws_Exception()
         {
-            _timeStampService.GetTimeStamp(string.Empty);
+            _timeStampService.GenerateTimeStamp(string.Empty);
         }
 
         [Test]
-        public void TimeStampService_GetTimeStamp_Returns_TimeStampResult()
+        public void TimeStampService_GenerateTimeStamp_Returns_TimeStampResult()
         {
-            var result = _timeStampService.GetTimeStamp(_content);
+            var result = _timeStampService.GenerateTimeStamp(_content);
 
             Assert.That(result,Is.Not.Null);
             Assert.That(result.IsSuccess,Is.True);

@@ -13,7 +13,7 @@ namespace TSA_Net_Client.Services
             _timeStampClient = timeStampClient;
         }
 
-        public TimeStampResult GetTimeStamp(string content)
+        public TimeStampResult GenerateTimeStamp(string content)
         {
             if (string.IsNullOrEmpty(content))
             {
