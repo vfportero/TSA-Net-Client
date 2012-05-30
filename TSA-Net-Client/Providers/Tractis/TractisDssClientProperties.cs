@@ -11,8 +11,8 @@
         {
             ApiTimeStampUrl = "https://api.tractis.com/tsa";
             ApiVerifyUrl = "https://api.tractis.com/sva";
-            ApiUserName = "b5f7c9d1-93b5-4343-a252-6a3e4da4dce7";
-            ApiPassword = "6036975f8ec4d8b7530ebde7cb010e0d83cf376b";
+            ApiUserName = "your Tractis ApiKey ID here";
+            ApiPassword = "your Tractis ApiKey Secret here";
         }
     }
 }
