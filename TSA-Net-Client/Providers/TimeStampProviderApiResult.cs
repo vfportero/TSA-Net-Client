@@ -10,5 +10,6 @@ namespace TSA_Net_Client.Providers
         public bool IsSuccess { get; set; }
         public string Signature { get; set; }
         public DateTime? TimeStampDateTime { get; set; }
+        public DateTime? TimeStampExpirationDateTime { get; set; }
     }
 }

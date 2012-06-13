@@ -33,6 +33,8 @@ namespace Tests.Integration
             Assert.That(result.IsSuccess, Is.True);
             Assert.That(result.TimeStampXml, Is.Not.Null);
             Assert.That(result.TimeStampDateTime.HasValue, Is.True);
+            Assert.That(result.TimeStampExpirationDateTime.HasValue, Is.True);
+            Assert.That(result.OriginalContent, Is.EqualTo(_content));
         }
 
         [Test]
@@ -45,6 +47,7 @@ namespace Tests.Integration
             Assert.That(result.TimeStampXml, Is.Null);
             Assert.That(result.Signature, Is.Null);
             Assert.That(result.TimeStampDateTime.HasValue, Is.False);
+            Assert.That(result.TimeStampExpirationDateTime.HasValue, Is.False);
 
         }
     }

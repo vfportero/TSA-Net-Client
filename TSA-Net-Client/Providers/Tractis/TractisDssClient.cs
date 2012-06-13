@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Net;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Xml;
 using TSA_Net_Client.Providers.Helpers;
@@ -44,6 +45,10 @@ namespace TSA_Net_Client.Providers.Tractis
                 result.Signature = ExtractSignatureString(apiResponse);
                 result.TimeStampDateTime = DateTime.Parse(result.ApiResponse.SelectSingleNode("//ns3:SignResponse/ns3:OptionalOutputs/ns3:SigningTimeInfo/ns3:SigningTime", tractisDssNamespace).InnerText);
                 result.OriginalContent = contentToStamp;
+
+                string certificateText = result.ApiResponse.SelectSingleNode("//ds:X509Certificate", tractisDssNamespace).InnerText;
+                X509Certificate certificate = new X509Certificate(HashHelper.StrToByteArray(certificateText));
+                result.TimeStampExpirationDateTime = DateTime.Parse(certificate.GetExpirationDateString());
 
             }
 

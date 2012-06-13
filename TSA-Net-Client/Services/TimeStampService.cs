@@ -28,6 +28,8 @@ namespace TSA_Net_Client.Services
                 result.TimeStampXml = apiResult.ApiResponse;
                 result.Signature = apiResult.Signature;
                 result.TimeStampDateTime = apiResult.TimeStampDateTime;
+                result.TimeStampExpirationDateTime = apiResult.TimeStampExpirationDateTime;
+                result.OriginalContent = apiResult.OriginalContent;
             }
 
             return result;
